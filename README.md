@@ -4,49 +4,49 @@ This analysis uses a variety of supervised machine learning models to predict cr
 ## Results
 ### Balanced Accuracy scores
 -Naive Random Oversampling:  
-```
-0.6486003843504116
-```  
+
+```0.6486003843504116```  
+
 -SMOTE Oversampling: 
-```
-0.6204640406750708
-```  
+
+```0.6204640406750708``` 
+ 
 -ClusterCentroids Undersampling:  
-```
-0.5144493999057254
-```  
+
+```0.5144493999057254```  
+
 -SMOLTEENN resampling:  
-```
-0.6290686150090045
-```  
+
+```0.6290686150090045```
+  
 -BalancedRandomForest:  
 I was unable to produce a score due to an error  
 -EasyEnsembleClassifier:  
 I was unable to produce a score due to a confirmed bug  
 ### Precision and Recall scores
 -Naive Random Oversampling: Balanced accuracy of .6486  
-```
-                   pre       rec    
+
+                  ``` pre       rec    
 
   high_risk       0.01      0.64  
    low_risk       1.00      0.65  
 
-avg / total       0.99      0.65
-``` 
-```
-[   56,    31]
-[ 5931, 11187]
-```    
+avg / total       0.99      0.65```
+ 
+
+```[   56,    31]
+[ 5931, 11187]```
+    
     I'll be treating the Naive Random Oversampling as a baseline for the others- we get an average .99 precision, and a 65% recall. If we look at the confusion matrix we see a higher number of true positives than false positives and a higher number of true negatives than false negatives. The difference in values between positives and negatives seems to make sense due to the imbalanced nature of our data. We're looking at a balanced accuracy score of .6486 to compare against our other models. 
 -SMOTE Oversampling: Balanced Accuracy of .6205  
-```
-                  pre       rec    
+
+                 ``` pre       rec    
 
   high_risk       0.01      0.61      
    low_risk       1.00      0.63     
 
-avg / total       0.99      0.63     
-```
+avg / total       0.99      0.63   ```  
+
 [   53,    34]
 [ 6304, 10814]  
 ```  
