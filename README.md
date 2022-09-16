@@ -9,8 +9,8 @@ This analysis uses a variety of supervised machine learning models to predict cr
 -SMOTE Oversampling:  
 ![](https://github.com/ChrisJAnderson/Credit-Risk-Analysis/blob/main/Images/SMOTESTATS.png)  
  The SMOTE Oversampling shows us lower average recall with the same amount of precision. The confusion matrix backs this up, we see fewer true positives and true negatives than in our naive random oversampling. SMOTE performs worse than our baseline in this case. Our balanced accuracy score, .6205, is also lower than our baseline.  
--ClusterCentroids undersampling:   
-  
+   
+-ClusterCentroids undersampling:  
 ![](https://github.com/ChrisJAnderson/Credit-Risk-Analysis/blob/main/Images/CLUSSY.png)  
 Undersampling is once again proving worse than our baseline- at this point I'm beginning to question if I'm reading these stats right, or if I've done something wrong in my coding. We see an average 44% recall and a much higher value of false negatives and positives in the confusion matrix to confirm this. Balanced accuracy is considerably worse than naive oversampling, with a score of .5144.  
   
